@@ -7,14 +7,25 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class DemoApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
-    }
+public class HelloController {
 
     @GetMapping("/")
     public String home() {
-        return "Hello Saikumar! GitHub Actions -> Maven -> Docker -> ECR -> EKS -> Kubernetes";
+        return """
+        Java Spring Boot Application
+
+        Successfully Deployed on Amazon EKS
+
+        DevOps CI/CD Pipeline:
+        GitHub Actions → Maven → Docker → Amazon ECR → Amazon EKS → Kubernetes
+
+        AWS Services Used:
+        ✔ Amazon ECR - Container Registry
+        ✔ Amazon EKS - Kubernetes Cluster
+
+        Optional Services (If Required by the Application):
+        ✔ Amazon RDS - Relational Database
+        ✔ Amazon S3 - Object Storage
+        """;
     }
 }
