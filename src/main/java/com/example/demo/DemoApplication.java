@@ -12,20 +12,20 @@ public class HelloController {
     @GetMapping("/")
     public String home() {
         return """
-        Java Spring Boot Application
+Java Spring Boot Application
 
-        Successfully Deployed on Amazon EKS
+Successfully Deployed on Amazon EKS
 
-        DevOps CI/CD Pipeline:
-        GitHub Actions → Maven → Docker → Amazon ECR → Amazon EKS → Kubernetes
+DevOps CI/CD Pipeline:
+GitHub Actions -> Maven -> Docker -> Amazon ECR -> Amazon EKS -> Kubernetes
 
-        AWS Services Used:
-        ✔ Amazon ECR - Container Registry
-        ✔ Amazon EKS - Kubernetes Cluster
+AWS Services Used:
+- Amazon ECR (Container Registry)
+- Amazon EKS (Kubernetes Cluster)
 
-        Optional Services (If Required by the Application):
-        ✔ Amazon RDS - Relational Database
-        ✔ Amazon S3 - Object Storage
-        """;
+Optional Services (If Required by the Application):
+- Amazon RDS (Relational Database)
+- Amazon S3 (Object Storage)
+""";
     }
 }
